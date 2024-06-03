@@ -18,17 +18,9 @@ const Index = () => {
               <a className="font-light text-black navLink" href="/">Home</a>
             </li>
             <li>
-              <a className="font-light text-black navLink" href="/about">About Us</a>
+              <a className="font-light text-black navLink" href="/product">Products</a>
             </li>
-            <li>
-              <a className="font-light text-black navLink" href="/itinerary">Itinerary</a>
-            </li>
-            <li>
-              <a className="font-light text-black navLink" href="/services">Services</a>
-            </li>
-            <li>
-              <a className="font-light text-black navLink" href="/contact">Contact</a>
-            </li>
+           
           </ul>
           
           {/* Search Bar */}

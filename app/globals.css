@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.splide__list {
-    @apply h-auto !important;
+.space-slide {
+    @apply block !important;
+}
+.ant-card-body{
+    @apply px-0 !important;
 }

@@ -28,11 +28,11 @@ const Index = ({ text, title, data }: ProductList) => {
 
 export const CardList = ({ data }: ProductList) => {
     return (
-        <Space>
+        <Space className='space-slide'>
             <Splide
                options={{
                 rewind: true,
-                perPage: 3,
+                perPage: 4,
                 gap: "1rem",
                 breakpoints: {
                   991: {
@@ -50,9 +50,9 @@ export const CardList = ({ data }: ProductList) => {
                 {data && data.slice(0, 5).map((product: IProduct, index: number) => (
                     <SplideSlide key={index} >
                         <Card
-                            className='border-transparent'
-                            style={{ width: 240 }}
-                            cover={<Image alt="example" width={100} height={100} src={product.images[0]} loading='lazy'
+                            className='border-transparent w-full '
+                            // style={{ width: 240 }}
+                            cover={<Image alt="example" width={100} height={100} src={product.images[0]} loading='lazy' className='rounded-none object-cover'
                             />}
                         >
                             <Meta title={product.title} description="www.instagram.com" />
