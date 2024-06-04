@@ -6,5 +6,8 @@
     @apply block !important;
 }
 .ant-card-body{
-    @apply px-0 !important;
+    @apply px-4 rounded-none !important;
+}
+.ant-card-meta-description {
+    @apply text-secondary2 !important;
 }

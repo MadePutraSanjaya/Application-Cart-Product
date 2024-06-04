@@ -3,13 +3,13 @@ import IProduct from '@/types/products.type';
 
 // fetch data
 export const fetchProducts = async (): Promise<IProduct[]> => {
-  const response = await axiosInstance.get<IProduct[]>('/');
+  const response = await axiosInstance.get<IProduct[]>('/products');
   return response.data;
 };
 
 // fetch data by ID
 export const fetchProductById = async (id: number): Promise<IProduct> => {
-  const response = await axiosInstance.get<IProduct>(`/products/${id}`);
+  const response = await axiosInstance.get<IProduct>(`/products/${id}`); 
   return response.data;
 };
 
