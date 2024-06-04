@@ -3,7 +3,7 @@ import React from 'react'
 
 const Product = () => {
   return (
-    <div>
+    <div className='relative px-6 py-10 mx-auto sm:px-16 sm:py-24 max-w-7xl overflow-x-hidden'>
       <ProductsPage />
     </div>
   )
