@@ -49,7 +49,7 @@ export const CardList = ({ data }: ProductList) => {
                     },
                 }}
             >
-                {data && data.slice(0, 5).map((product: IProduct, index: number) => (
+                {data && Array.isArray(data) && data.slice(0, 5).map((product: IProduct, index: number) => (
 
                     <SplideSlide key={index} >
                         <Card

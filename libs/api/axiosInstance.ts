@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // get api
 const axiosInstance = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_API_URL,
+    baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://api.escuelajs.co/api/v1/',
     headers: {
         'Content-Type': 'application/json'
     }

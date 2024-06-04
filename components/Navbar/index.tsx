@@ -41,6 +41,9 @@ const Index = () => {
             <li>
               <Link className="font-light text-black navLink" href="/">Home</Link>
             </li>
+            <li>
+              <Link className="font-light text-black navLink" href="/products">Products</Link>
+            </li>
 
           </ul>
 
